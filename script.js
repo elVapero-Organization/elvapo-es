@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // footer
 const city = document.getElementById("city");
-const cont = document.querySelectorAll(".foot-cont-three a");
+const cont = document.querySelectorAll(".foot-cont-three > span, .foot-cont-three > p");
 if (city && cont.length > 0) {
     city.addEventListener("click", toggleCont);
     function toggleCont() {
