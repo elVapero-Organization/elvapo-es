@@ -986,6 +986,8 @@ footer svg {
 .geo-seo,
 .faq-seo {
     padding: 70px 0;
+    background: var(--dark-bg, #0f0f18);
+    color: #ffffff;
 }
 
 .geo-seo .container,
@@ -1000,6 +1002,7 @@ footer svg {
 .faq-seo h2 {
     font-size: clamp(28px, 4vw, 42px);
     margin-bottom: 18px;
+    color: #ffffff;
 }
 
 .geo-seo h3 {
@@ -1012,6 +1015,7 @@ footer svg {
 .faq-seo p {
     line-height: 1.7;
     opacity: 0.9;
+    color: rgba(255, 255, 255, 0.82);
 }
 
 .geo-cities {
@@ -1042,6 +1046,7 @@ footer svg {
 .faq-item summary {
     cursor: pointer;
     font-weight: 700;
+    color: #ffffff;
 }
 
 .faq-item p {
@@ -1459,6 +1464,116 @@ footer svg {
     .modal-content {
         padding: 20px;
         margin: 15px;
+    }
+}
+
+/* SEO / GEO blocks (elVapo.es) */
+.section.seo-info-section,
+.section.comparison-section,
+.section.brands-seo-section,
+.section.geo-section {
+    padding: 60px 0;
+    background: var(--dark-bg, #0f0f18);
+    color: #ffffff;
+}
+
+.seo-info-grid,
+.brands-seo-grid {
+    display: grid;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.seo-info-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.brands-seo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.seo-info-card,
+.brand-seo-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 18px;
+    color: #ffffff;
+}
+
+.seo-info-card p,
+.brand-seo-card p,
+.seo-info-card span,
+.brand-seo-card span,
+.seo-info-card a,
+.brand-seo-card a {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.seo-info-card h2,
+.brand-seo-card h2,
+.seo-info-card h3,
+.brand-seo-card h3,
+.seo-info-card h4,
+.brand-seo-card h4 {
+    color: #ffffff;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin-top: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+}
+
+.comparison-table {
+    width: 100%;
+    min-width: 680px;
+    border-collapse: collapse;
+    background: transparent;
+    color: #ffffff;
+}
+
+.comparison-table th,
+.comparison-table td {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.comparison-table thead th {
+    background: rgba(255, 255, 255, 0.12);
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.comparison-section .section-header p,
+.seo-info-section .section-header p,
+.brands-seo-section .section-header p,
+.geo-section p {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.comparison-section h2,
+.seo-info-section h2,
+.brands-seo-section h2,
+.geo-section h2 {
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .seo-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brands-seo-grid {
+        grid-template-columns: 1fr;
     }
 }
 
